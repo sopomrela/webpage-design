@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Join SocialNet</h1>
+        <form id="registerForm" class="form">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="johndoe123" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+            <label for="password">Password</label>
+            <div class="password-wrapper">
+                <input type="password" id="password" name="password" placeholder="********" required>
+                <button type="button" id="togglePassword">👁</button>
+            </div>
+
+            <label for="confirm">Confirm Password</label>
+            <input type="password" id="confirm" name="confirm" placeholder="********" required>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+
+            <button type="submit" class="btn">Register</button>
+            <p id="message"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 SocialNet | <a href="#">Already a user? Login</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
